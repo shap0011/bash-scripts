@@ -20,7 +20,7 @@ for LOG_FILE in $LOG_FILES; do
     echo "$LOG_FILE" >> "$REPORT_FILE"
     echo "=====================================================" >> "$REPORT_FILE"
 
-    for PATTERN in ${ERROR_PATTERNS[@]}; do
+    for PATTERN in "${ERROR_PATTERNS[@]}"; do
 
         echo -e "\nSearching $PATTERN logs in $LOG_FILE file" >> "$REPORT_FILE"
         echo "-----------------------------------------------" >> "$REPORT_FILE"
